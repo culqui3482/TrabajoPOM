@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite pruebas de regresión" verbose="1" >
+    <test name="Casos de prueba" >
+        <classes>
+            <class name="tests.Tests">
+				<methods>
+					<include name="CP001_login_fallido" />
+                    <include name="CP002_login_exitoso" />
+                    <include name="CP003_Catalogo" />
+                    <include name="CP004_Products_editar" />
+                    <include name="CP005_Import_Product" />
+                    <include name="CP006_New_producto_save" />
+                    <include name="CP007_New_producto_Settings" />
+                    <include name="CP008_New_producto_SaveConti" />
+				</methods>
+			</class>
+
+        </classes>
+    </test>
+</suite>
